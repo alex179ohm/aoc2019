@@ -16,12 +16,12 @@ fn main() {
 //        day1::one(input.clone()),
 //        day1::two(input)
 //    );
-//    let input = get_input_by_day(2);
-//    println!(
-//        "day 2: {} {}",
-//        day2::one(input.clone()),
-//        day2::two(input)
-//    );
+    let input = get_input_by_day(2);
+    println!(
+        "day 2: {} {}",
+        day2::one(input.clone()),
+        day2::two(input)
+    );
     let input = get_input_by_day(3);
     println!(
         "day 3: {} {}",

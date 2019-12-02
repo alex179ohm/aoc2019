@@ -1,4 +1,4 @@
-fn get_opcodes(input: String) -> Vec<i64> {
+fn parse_input(input: String) -> Vec<i64> {
     input
         .trim_end()
         .split(',')
@@ -28,7 +28,7 @@ fn run_program(opcodes: &mut [i64], ip_addr: &mut usize) {
 }
 
 pub fn one(input: String) -> i64 {
-    let mut op_vec = get_opcodes(input);
+    let mut op_vec = parse_input(input);
     let opcodes = op_vec.as_mut_slice();
     opcodes[1] = 12;
     opcodes[2] = 2;
@@ -39,7 +39,7 @@ pub fn one(input: String) -> i64 {
 pub fn two(input: String) -> i64 {
     for noun in 0i64..=99 {
         for verb in 0i64..=99 {
-            let mut op_vec = get_opcodes(input.clone());
+            let mut op_vec = parse_input(input.clone());
             let opcodes = op_vec.as_mut_slice();
             opcodes[1] = noun;
             opcodes[2] = verb;
@@ -49,5 +49,5 @@ pub fn two(input: String) -> i64 {
             }
         }
     }
-    0i64
+    -1i64 // error
 }
