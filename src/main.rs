@@ -2,6 +2,7 @@
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 
 use std::fs;
 
@@ -16,17 +17,22 @@ fn main() {
 //        day1::one(input.clone()),
 //        day1::two(input)
 //    );
-    let input = get_input_by_day(2);
+//    let input = get_input_by_day(2);
+//    println!(
+//        "day 2: {} {}",
+//        day2::one(input.clone()),
+//        day2::two(input)
+//    );
+//    let input = get_input_by_day(3);
+//    println!(
+//        "day 3: {} {}",
+//        day3::one(input.clone()),
+//        day3::two(input)
+//    );
     println!(
-        "day 2: {} {}",
-        day2::one(input.clone()),
-        day2::two(input)
-    );
-    let input = get_input_by_day(3);
-    println!(
-        "day 3: {} {}",
-        day3::one(input.clone()),
-        day3::two(input)
+        "day 4: {} {}",
+        day4::one(),
+        day4::two()
     );
 }
 
